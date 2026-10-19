@@ -1,0 +1,236 @@
+:root {
+  --rosa-fucsia: #e6007e;
+  --rosa-suave: #fbd9e3;
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar-brand {
+  color: var(--rosa-fucsia);
+}
+.navbar .nav-link {
+  color: #222;
+  font-weight: 600;
+}
+.navbar .nav-link:hover {
+  color: var(--rosa-fucsia);
+}
+.navbar .navbar-toggler {
+  background-color: var(--rosa-fucsia);
+}
+
+#inicio {
+  background-color: var(--rosa-suave);
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+.inicio-titulo {
+  color: #222;
+}
+#inicio h1 {
+  font-size: 56px;
+}
+.hero-img {
+  width: 100%;
+  max-width: 420px;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 0 15px 35px rgba(230, 0, 126, 0.25);
+}
+
+.cat-flora {
+  background-color: var(--rosa-suave);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cat-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+.cat-flora h5 {
+  position: relative;
+  margin-top: -50px;
+  margin-bottom: 25px;
+  color: white;
+  font-weight: bold;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.7));
+}
+.cat-flora p {
+  color: #444;
+}
+
+#carouselGaleria .carousel-item img {
+  height: 65vh;
+  object-fit: cover;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--rosa-fucsia);
+  border-radius: 50%;
+  padding: 18px;
+  background-size: 50%;
+}
+
+.tienda-flora {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+.tienda-flora .row {
+  margin: 0 0 0 -1px;
+}
+.tienda-flora .row > div {
+  padding: 0;
+}
+.tarjeta-flora {
+  border-left: 1px solid #f3e6eb;
+  border-bottom: 1px solid #f3e6eb;
+}
+.tienda-flora .row:nth-child(2) .tarjeta-flora {
+  border-bottom: none;
+}
+.tarjeta-flora h5 {
+  font-size: 16px;
+  font-weight: bold;
+}
+#ramos img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.platillo {
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+  transition: 0.9s ease;
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.platillo:hover {
+    transform: rotate(180deg);
+}
+
+.precio {
+  color: var(--rosa-fucsia);
+  font-weight: bold;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: var(--rosa-fucsia);
+}
+
+.btn.btn-flora {
+  background-color: var(--rosa-fucsia);
+  color: white;
+  border-radius: 30px;
+  padding: 8px 28px;
+  font-weight: 600;
+}
+.btn.btn-flora:hover {
+  background-color: #b8005f;
+  color: white;
+}
+
+.promo-flora {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+}
+.promo-flora .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.etiqueta-promo {
+  display: inline-block;
+  background-color: var(--rosa-fucsia);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 2px 14px;
+  margin-bottom: 8px;
+}
+.solo-movil {
+  display: none;
+}
+
+.accordion .accordion-button:not(.collapsed) {
+  background-color: var(--rosa-suave);
+  color: var(--rosa-fucsia);
+}
+.accordion .accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(230, 0, 126, 0.25);
+}
+
+.platillo {
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  #inicio h1 {
+    font-size: 44px;
+  }
+  .hero-img {
+    margin-top: 30px;
+  }
+  #carouselGaleria .carousel-item img {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .oculto-tableta {
+    display: none;
+  }
+  .inicio-titulo {
+    color: var(--rosa-fucsia);
+    text-align: center;
+  }
+  .hero-img {
+    height: 380px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .oculto-movil {
+    display: none;
+  }
+  .solo-movil {
+    display: block;
+  }
+  #inicio {
+    min-height: auto;
+  }
+  #inicio h1 {
+    font-size: 32px;
+  }
+  .hero-img {
+    height: 300px;
+  }
+  .cat-img {
+    height: 180px;
+  }
+  #carouselGaleria .carousel-item img {
+    height: 35vh;
+  }
+}
